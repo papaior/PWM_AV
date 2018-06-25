@@ -1,0 +1,44 @@
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right
+SubNum	age	gender	group	handed
+99	0	O	1 5 6 2 3 4	right

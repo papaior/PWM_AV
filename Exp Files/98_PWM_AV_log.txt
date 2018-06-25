@@ -1,0 +1,11 @@
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+1	1	1.819694e-01	3.502924e-01	7.006015e-01	2.001732e-01	6.506256e-01	2.001700e+00	1	2	Calibri	k	4	yellow	orange	gray	red	magenta	2	693 282	706 500	743 344	755 429	yellow	black	orange	green	2	535 421	549 336	586 377	588 500	0	6	0	6	0	NaN	NaN	NaN
+1	2	1.951434e-01	3.502704e-01	7.006296e-01	2.000572e-01	6.339514e-01	2.001739e+00	1	4	Calibri	p	4	blue	gray	cyan	yellow	red	2	766 393	718 359	718 303	703 517	yellow	purple	white	black	2	533 435	523 384	582 376	552 329	0	8	0	6	0	NaN	NaN	NaN
+1	3	1.425465e-01	3.503876e-01	7.135316e-01	2.000724e-01	6.208593e-01	2.001455e+00	0	4	Calibri	p	2	yellow	gray	black	magenta	orange	1	525 459	516 376	564 303	578 461	white	gray	orange	pink	1	712 435	726 384	699 324	718 493	0	8	0	8	0	NaN	NaN	NaN
+1	4	1.139789e-01	3.503003e-01	7.004602e-01	2.001677e-01	6.505751e-01	2.001857e+00	1	4	Calibri	k	2	orange	black	gray	red	cyan	1	537 379	524 446	567 500	579 286	purple	yellow	green	magenta	1	732 465	720 329	693 280	755 403	0	6	0	6	0	NaN	NaN	NaN
+1	5	1.250438e-01	3.504093e-01	7.006500e-01	2.004435e-01	6.671359e-01	2.001643e+00	1	3	Calibri	k	2	white	cyan	orange	green	pink	1	548 350	545 431	579 308	571 502	white	black	magenta	yellow	1	763 386	705 322	696 443	746 470	0	6	0	6	0	NaN	NaN	NaN
+1	6	1.130569e-01	3.502949e-01	7.006477e-01	2.001682e-01	6.171306e-01	2.001826e+00	0	3	Calibri	p	2	cyan	red	green	orange	white	2	747 397	693 336	749 477	696 438	white	blue	green	purple	2	569 428	550 313	567 496	578 357	0	8	0	8	0	NaN	NaN	NaN
+1	7	1.467337e-01	3.502505e-01	7.007069e-01	2.003642e-01	2.835933e-01	2.001372e+00	0	3	Calibri	 	 	red	magenta	green	pink	purple	1	565 437	545 327	567 493	506 409	green	orange	blue	cyan	1	771 399	723 375	729 476	710 292	0	0	0	8	1	NaN	NaN	NaN
+1	8	1.801039e-01	3.501847e-01	7.005928e-01	2.002107e-01	6.506395e-01	2.001732e+00	1	1	Calibri	k	2	yellow	pink	blue	gray	purple	2	764 457	704 443	748 384	755 326	orange	red	pink	cyan	2	538 468	510 396	587 315	567 389	0	6	0	6	0	NaN	NaN	NaN

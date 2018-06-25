@@ -1,0 +1,146 @@
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+1	1	1.160235e-01	3.502302e-01	7.000067e-01	2.000124e-01	1.999605e-01	2.000370e+00	1	2	Calibri	 	 	green	yellow	magenta	white	blue	2	750 391	723 482	750 321	768 440	black	red	cyan	gray	2	565 312	564 463	537 398	588 367	0	0	0	6	1	NaN	NaN	NaN
+1	2	1.168600e-01	3.501495e-01	7.001602e-01	1.999449e-01	1.999017e-01	2.000273e+00	1	1	Calibri	 	 	purple	white	green	black	blue	1	551 317	508 389	565 441	577 492	pink	blue	green	red	1	759 453	739 327	699 422	700 367	0	0	0	6	1	NaN	NaN	NaN
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+1	3	1.667152e-01	3.499761e-01	7.001002e-01	2.001389e-01	7.001015e-01	2.000299e+00	1	4	Calibri	p	4	white	blue	magenta	pink	purple	2	714 496	718 323	727 439	739 388	gray	purple	green	magenta	2	555 366	559 292	506 393	541 466	0	8	0	6	0	NaN	NaN	NaN
+1	4	1.835200e-01	3.498815e-01	7.001988e-01	2.000447e-01	6.501664e-01	2.000237e+00	1	3	Calibri	p	2	red	magenta	gray	pink	black	1	543 417	524 349	566 290	558 509	magenta	gray	cyan	blue	1	714 383	762 435	709 473	720 311	0	8	0	6	0	NaN	NaN	NaN
+1	5	1.328269e-01	3.498019e-01	6.999927e-01	2.001587e-01	8.003351e-01	2.000428e+00	0	3	Calibri	k	4	yellow	magenta	black	blue	red	2	720 323	735 378	755 437	703 508	pink	red	black	purple	2	506 389	564 397	574 294	548 453	0	6	0	8	0	NaN	NaN	NaN
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+1	1	1.166911e-01	3.501281e-01	7.002069e-01	2.001441e-01	1.998983e-01	2.000242e+00	0	3	Calibri	 	 	orange	pink	white	red	green	2	703 386	759 352	696 499	730 301	gray	magenta	black	yellow	2	534 422	573 309	559 480	512 363	0	0	0	8	1	NaN	NaN	NaN
+1	2	1.166940e-01	3.499990e-01	7.002322e-01	2.002063e-01	2.000027e-01	2.000121e+00	0	1	Calibri	 	 	red	white	blue	magenta	green	2	704 346	703 452	758 374	702 294	black	green	white	red	2	561 441	581 318	544 365	578 514	0	0	0	8	1	NaN	NaN	NaN
+1	3	1.667911e-01	3.499339e-01	7.001223e-01	2.000130e-01	7.834337e-01	2.000434e+00	1	4	Calibri	k	4	black	pink	blue	magenta	gray	1	569 496	528 454	586 302	573 380	gray	orange	white	black	1	745 472	708 512	696 350	771 362	0	6	0	6	0	NaN	NaN	NaN
+1	4	1.834588e-01	3.500944e-01	7.002225e-01	1.999365e-01	6.499863e-01	2.000255e+00	0	1	Calibri	p	2	yellow	orange	cyan	green	black	1	571 332	534 445	560 493	531 391	black	blue	red	gray	1	741 454	714 391	694 320	742 340	0	8	0	8	0	NaN	NaN	NaN
+1	5	1.159454e-01	3.502048e-01	7.000491e-01	1.999991e-01	1.999027e-01	2.000503e+00	0	3	Calibri	 	 	gray	magenta	pink	purple	cyan	1	556 323	566 468	539 385	584 417	purple	red	black	green	1	695 368	702 509	755 345	740 399	0	0	0	8	1	NaN	NaN	NaN
+1	6	1.661577e-01	3.501710e-01	7.003217e-01	1.999011e-01	7.832853e-01	2.000277e+00	0	3	Calibri	k	2	black	magenta	green	red	gray	1	561 311	563 458	547 368	518 432	gray	black	blue	pink	1	765 422	738 372	710 312	734 495	0	6	0	8	0	NaN	NaN	NaN
+1	7	1.667493e-01	3.500481e-01	7.001153e-01	2.000296e-01	2.001983e-01	2.000147e+00	0	2	Calibri	 	 	cyan	red	purple	blue	orange	1	587 402	567 323	529 389	586 477	cyan	gray	yellow	black	1	704 461	740 314	765 455	742 393	0	0	0	8	1	NaN	NaN	NaN
+1	8	1.500507e-01	3.500685e-01	7.000782e-01	2.000103e-01	7.835876e-01	2.000257e+00	1	1	Calibri	k	4	orange	white	magenta	blue	purple	1	547 340	579 296	528 433	588 487	green	blue	magenta	white	1	763 382	747 458	704 417	711 514	0	6	0	6	0	NaN	NaN	NaN
+1	9	9.999991e-02	3.500085e-01	7.001108e-01	2.000719e-01	2.001629e-01	2.000224e+00	0	2	Calibri	 	 	green	yellow	orange	white	gray	2	749 359	767 433	695 335	729 495	yellow	purple	white	green	2	543 355	581 460	519 452	588 523	0	0	0	8	1	NaN	NaN	NaN
+1	10	1.834924e-01	3.500284e-01	6.999486e-01	1.999427e-01	2.001912e-01	2.000301e+00	0	4	Calibri	 	 	red	orange	pink	magenta	yellow	2	761 458	721 362	710 497	732 307	yellow	cyan	black	green	2	550 343	506 404	533 470	580 284	0	0	0	8	1	NaN	NaN	NaN
+1	11	1.832961e-01	3.499946e-01	7.001238e-01	2.001781e-01	6.500826e-01	2.000355e+00	0	3	Calibri	p	2	pink	black	purple	orange	gray	2	700 391	737 333	707 464	714 285	red	green	cyan	pink	2	575 320	544 470	543 408	520 346	0	8	0	8	0	NaN	NaN	NaN
+1	12	1.327064e-01	3.499433e-01	7.001226e-01	2.002261e-01	1.999723e-01	2.000301e+00	1	4	Calibri	 	 	black	white	gray	red	purple	1	535 419	544 319	583 464	575 371	yellow	purple	blue	white	1	700 349	708 506	734 406	762 454	0	0	0	6	1	NaN	NaN	NaN
+1	13	1.992813e-01	3.500586e-01	7.000954e-01	2.000195e-01	6.502388e-01	2.000192e+00	1	3	Calibri	p	4	purple	magenta	white	pink	yellow	2	766 418	705 351	715 407	762 356	orange	gray	pink	cyan	2	522 456	563 365	576 292	578 478	0	8	0	6	0	NaN	NaN	NaN
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+1	1	1.166988e-01	3.499185e-01	7.000897e-01	2.001873e-01	2.000607e-01	2.000313e+00	0	3	Calibri	 	 	orange	pink	white	red	green	2	703 386	759 352	696 499	730 301	gray	magenta	black	yellow	2	534 422	573 309	559 480	512 363	0	0	0	8	1	NaN	NaN	NaN
+1	2	1.168748e-01	3.500905e-01	7.001133e-01	1.998438e-01	2.000238e-01	2.000459e+00	0	1	Calibri	 	 	red	white	blue	magenta	green	2	704 346	703 452	758 374	702 294	black	green	white	red	2	561 441	581 318	544 365	578 514	0	0	0	8	1	NaN	NaN	NaN
+1	3	1.666632e-01	7.834499e-01	7.000630e-01	2.000978e-01	2.000115e-01	2.000322e+00	1	4	Calibri	k	4	black	pink	blue	magenta	gray	1	569 496	528 454	586 302	573 380	gray	orange	white	black	1	745 472	708 512	696 350	771 362	0	6	0	6	0	NaN	NaN	NaN
+1	4	1.500495e-01	6.501113e-01	7.002628e-01	2.000271e-01	2.000056e-01	2.000290e+00	0	1	Calibri	p	2	yellow	orange	cyan	green	black	1	571 332	534 445	560 493	531 391	black	blue	red	gray	1	741 454	714 391	694 320	742 340	0	8	0	8	0	NaN	NaN	NaN
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+1	1	1.333631e-01	3.500881e-01	7.001486e-01	2.000249e-01	2.166782e-01	2.000300e+00	1	4	Calibri	 	 	orange	pink	green	red	black	2	718 370	700 491	750 415	703 316	white	blue	yellow	pink	2	522 335	578 408	566 482	527 388	0	0	0	6	1	NaN	NaN	NaN
+1	2	1.833465e-01	3.500674e-01	7.001203e-01	2.000179e-01	2.000415e-01	2.000322e+00	0	3	Calibri	 	 	black	blue	gray	cyan	magenta	1	558 484	575 378	563 291	510 436	yellow	red	purple	blue	1	709 343	719 487	708 415	703 288	0	0	0	8	1	NaN	NaN	NaN
+1	3	1.667038e-01	3.500900e-01	7.001117e-01	2.000402e-01	2.000358e-01	2.000291e+00	1	1	Calibri	 	 	green	yellow	magenta	purple	pink	2	719 382	699 496	773 378	693 312	magenta	orange	white	pink	2	580 410	562 481	524 364	574 310	0	0	0	6	1	NaN	NaN	NaN
+1	4	1.333468e-01	3.500408e-01	7.000999e-01	2.000285e-01	7.834957e-01	2.000304e+00	1	3	Calibri	k	2	purple	cyan	magenta	green	blue	1	558 465	553 393	579 281	572 339	yellow	black	green	blue	1	767 371	768 450	718 474	712 401	0	6	0	6	0	NaN	NaN	NaN
+1	5	1.501001e-01	3.501070e-01	7.001179e-01	1.999485e-01	1.999940e-01	2.000356e+00	0	1	Calibri	 	 	orange	purple	magenta	white	green	2	694 339	758 468	706 412	702 485	white	gray	magenta	yellow	2	527 372	518 456	555 300	568 421	0	0	0	8	1	NaN	NaN	NaN
+1	6	1.667711e-01	3.500342e-01	7.000585e-01	2.000054e-01	7.835007e-01	2.000383e+00	0	4	Calibri	k	2	black	magenta	green	purple	gray	2	729 409	693 461	734 313	707 359	cyan	magenta	yellow	green	2	558 482	561 300	575 396	505 421	0	6	0	8	0	NaN	NaN	NaN
+1	7	1.833539e-01	3.500844e-01	7.001594e-01	2.000126e-01	7.834559e-01	2.000259e+00	1	4	Calibri	k	2	blue	green	orange	purple	pink	1	526 369	533 423	545 480	587 511	blue	yellow	red	green	1	738 351	727 484	718 413	776 407	0	6	0	6	0	NaN	NaN	NaN
+1	8	1.167137e-01	3.501094e-01	7.001533e-01	1.999902e-01	7.834254e-01	2.000274e+00	1	4	Calibri	k	4	cyan	red	orange	gray	pink	2	696 498	711 373	751 330	696 299	black	white	pink	blue	2	546 426	531 347	556 498	582 323	0	6	0	6	0	NaN	NaN	NaN
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+1	1	9.918009e-02	3.503886e-01	7.006118e-01	2.003022e-01	3.085937e+00	2.001392e+00	1	2	Calibri	k	4	yellow	orange	gray	red	magenta	2	693 282	706 500	743 344	755 429	yellow	black	orange	green	2	535 421	549 336	586 377	588 500	0	6	0	6	0	NaN	NaN	NaN
+1	2	1.284661e-01	3.502430e-01	7.141640e-01	2.002610e-01	6.871686e-01	2.001376e+00	1	4	Calibri	p	4	blue	gray	cyan	yellow	red	2	766 393	718 359	718 303	703 517	yellow	purple	white	black	2	533 435	523 384	582 376	552 329	0	8	0	6	0	NaN	NaN	NaN
+1	3	1.146551e-01	3.503137e-01	7.003227e-01	2.001051e-01	6.838753e-01	2.001990e+00	0	4	Calibri	p	2	yellow	gray	black	magenta	orange	1	525 459	516 376	564 303	578 461	white	gray	orange	pink	1	712 435	726 384	699 324	718 493	0	8	0	8	0	NaN	NaN	NaN
+1	4	1.631963e-01	3.505633e-01	6.998249e-01	1.998843e-01	8.348060e-01	2.001786e+00	1	4	Calibri	k	2	orange	black	gray	red	cyan	1	537 379	524 446	567 500	579 286	purple	yellow	green	magenta	1	732 465	720 329	693 280	755 403	0	6	0	6	0	NaN	NaN	NaN
+1	5	1.128751e-01	3.502460e-01	7.006139e-01	2.004277e-01	8.174694e-01	2.001412e+00	1	3	Calibri	k	2	white	cyan	orange	green	pink	1	548 350	545 431	579 308	571 502	white	black	magenta	yellow	1	763 386	705 322	696 443	746 470	0	6	0	6	0	NaN	NaN	NaN
+1	6	1.301317e-01	3.503120e-01	7.005323e-01	2.000486e-01	6.840245e-01	2.001506e+00	0	3	Calibri	p	2	cyan	red	green	orange	white	2	747 397	693 336	749 477	696 438	white	blue	green	purple	2	569 428	550 313	567 496	578 357	0	8	0	8	0	NaN	NaN	NaN
+1	7	1.311758e-01	3.502705e-01	7.007471e-01	2.001610e-01	2.000663e-01	2.001486e+00	0	3	Calibri	 	 	red	magenta	green	pink	purple	1	565 437	545 327	567 493	506 409	green	orange	blue	cyan	1	771 399	723 375	729 476	710 292	0	0	0	8	1	NaN	NaN	NaN
+1	8	1.948329e-01	3.505246e-01	7.007034e-01	1.999870e-01	8.340075e-01	2.001743e+00	1	1	Calibri	k	2	yellow	pink	blue	gray	purple	2	764 457	704 443	748 384	755 326	orange	red	pink	cyan	2	538 468	510 396	587 315	567 389	0	6	0	6	0	NaN	NaN	NaN
+1	9	1.833241e-01	3.503407e-01	7.005626e-01	2.001888e-01	2.002588e-01	2.001601e+00	0	2	Calibri	 	 	pink	purple	white	green	black	1	586 400	528 377	568 449	571 330	magenta	cyan	green	blue	1	752 441	714 378	700 474	751 338	0	0	0	8	1	NaN	NaN	NaN
+1	10	1.327236e-01	3.503148e-01	7.006070e-01	2.002072e-01	8.340710e-01	2.001451e+00	0	1	Calibri	k	4	blue	magenta	red	cyan	white	2	736 494	769 418	749 352	700 404	pink	white	yellow	cyan	2	526 456	547 407	579 515	568 331	0	6	0	8	0	NaN	NaN	NaN
+1	11	1.999863e-01	3.502960e-01	7.007112e-01	2.001541e-01	2.001648e-01	2.001679e+00	1	2	Calibri	 	 	yellow	green	orange	pink	purple	2	698 366	764 374	720 430	696 477	white	red	gray	blue	2	507 376	585 359	549 465	572 298	0	0	0	6	1	NaN	NaN	NaN
+1	12	1.765574e-01	3.504740e-01	7.005813e-01	1.999749e-01	2.002332e-01	2.001464e+00	1	3	Calibri	 	 	yellow	pink	white	green	blue	2	759 453	709 398	728 315	773 393	red	magenta	blue	white	2	514 387	583 418	511 441	553 306	0	0	0	6	1	NaN	NaN	NaN
+1	13	1.421486e-01	3.503316e-01	7.005932e-01	2.001670e-01	8.340131e-01	2.001671e+00	1	2	Calibri	k	2	purple	white	orange	magenta	yellow	2	693 300	737 409	733 487	738 336	black	pink	green	white	2	503 408	544 456	570 340	571 508	0	6	0	6	0	NaN	NaN	NaN
+1	14	1.480991e-01	3.501143e-01	7.096901e-01	2.002459e-01	6.916655e-01	2.001287e+00	1	4	Calibri	p	4	black	orange	purple	yellow	white	1	569 377	586 504	545 443	518 369	black	blue	gray	purple	1	765 447	709 436	704 303	702 366	0	8	0	6	0	NaN	NaN	NaN
+1	15	1.138039e-01	3.505685e-01	7.006792e-01	1.998674e-01	2.001261e-01	2.001497e+00	0	1	Calibri	 	 	pink	cyan	yellow	orange	magenta	2	722 387	712 481	766 348	694 277	gray	red	purple	blue	2	573 294	574 469	527 350	535 408	0	0	0	8	1	NaN	NaN	NaN
+1	16	1.968782e-01	3.501307e-01	7.004768e-01	2.001667e-01	6.841946e-01	2.001587e+00	1	4	Calibri	p	2	gray	purple	black	yellow	pink	1	587 465	523 420	559 368	559 308	green	white	pink	red	1	728 448	733 356	704 400	694 507	0	8	0	6	0	NaN	NaN	NaN
+1	17	1.971068e-01	3.504959e-01	7.005989e-01	2.002302e-01	5.004600e-01	2.001512e+00	1	3	Calibri	 	 	purple	red	white	cyan	yellow	2	745 445	748 363	700 512	703 397	white	blue	black	cyan	2	588 515	526 423	587 418	585 288	0	0	0	6	1	NaN	NaN	NaN
+1	18	1.469787e-01	3.505010e-01	6.984940e-01	2.001502e-01	2.854819e-01	2.001739e+00	0	3	Calibri	 	 	white	red	magenta	green	black	2	710 300	738 494	731 386	700 458	gray	orange	pink	magenta	2	539 455	544 303	576 360	588 275	0	0	0	8	1	NaN	NaN	NaN
+1	19	1.072509e-01	3.502802e-01	7.128502e-01	1.998605e-01	1.105775e+00	2.001343e+00	1	2	Calibri	p	2	purple	black	orange	pink	magenta	1	555 330	535 402	576 487	524 454	red	magenta	cyan	green	1	699 445	714 509	694 390	762 358	0	8	0	6	0	NaN	NaN	NaN
+1	20	1.786060e-01	3.503208e-01	7.005696e-01	2.001131e-01	2.836328e-01	2.001822e+00	0	1	Calibri	 	 	red	yellow	gray	purple	black	2	719 323	699 371	762 437	696 500	orange	green	black	magenta	2	573 470	575 286	520 335	579 350	0	0	0	8	1	NaN	NaN	NaN
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+
+
+task	trial	fix1dur	fix2dur	fix3dur	s1dur	s2dur	s3dur	change	target	font	Astim	Vstim	newcolor	ccol1	ccol2	ccol3	ccol4	cside	cpos1	cpos2	cpos3	cpos4	rcol1	rcol2	rcol3	rcol4	rside	rpos1	rpos2	rpos3	rpos4	Resp1	CorAns1	Resp2	CorAns2	Acc1	Acc2	RT1	RT2
+1	1	1.981424e-01	3.502394e-01	7.005990e-01	2.003532e-01	1.250915e+00	2.001974e+00	1	2	Calibri	k	4	yellow	orange	gray	red	magenta	2	693 282	706 500	743 344	755 429	yellow	black	orange	green	2	535 421	549 336	586 377	588 500	0	6	0	6	0	NaN	NaN	NaN
+1	2	1.287405e-01	3.502315e-01	7.006001e-01	2.000178e-01	8.510461e-01	2.001672e+00	1	4	Calibri	p	4	blue	gray	cyan	yellow	red	2	766 393	718 359	718 303	703 517	yellow	purple	white	black	2	533 435	523 384	582 376	552 329	0	8	0	6	0	NaN	NaN	NaN
+1	3	1.277435e-01	3.502608e-01	7.007047e-01	2.000991e-01	8.507285e-01	2.001726e+00	0	4	Calibri	p	2	yellow	gray	black	magenta	orange	1	525 459	516 376	564 303	578 461	white	gray	orange	pink	1	712 435	726 384	699 324	718 493	0	8	0	8	0	NaN	NaN	NaN
+1	4	1.615934e-01	3.502665e-01	7.005981e-01	2.002428e-01	9.007896e-01	2.002169e+00	1	4	Calibri	k	2	orange	black	gray	red	cyan	1	537 379	524 446	567 500	579 286	purple	yellow	green	magenta	1	732 465	720 329	693 280	755 403	0	6	0	6	0	NaN	NaN	NaN
+1	5	1.795669e-01	3.501990e-01	7.006457e-01	2.005031e-01	9.008068e-01	2.001879e+00	1	3	Calibri	k	2	white	cyan	orange	green	pink	1	548 350	545 431	579 308	571 502	white	black	magenta	yellow	1	763 386	705 322	696 443	746 470	0	6	0	6	0	NaN	NaN	NaN
+1	6	1.475717e-01	3.503045e-01	7.141126e-01	2.001364e-01	8.539902e-01	2.001728e+00	0	3	Calibri	p	2	cyan	red	green	orange	white	2	747 397	693 336	749 477	696 438	white	blue	green	purple	2	569 428	550 313	567 496	578 357	0	8	0	8	0	NaN	NaN	NaN
+1	7	2.090994e-01	3.502956e-01	7.006017e-01	2.001614e-01	2.835147e-01	2.001412e+00	0	3	Calibri	 	 	red	magenta	green	pink	purple	1	565 437	545 327	567 493	506 409	green	orange	blue	cyan	1	771 399	723 375	729 476	710 292	0	0	0	8	1	NaN	NaN	NaN
+1	8	1.143941e-01	3.503848e-01	7.004862e-01	2.003792e-01	9.008682e-01	2.001447e+00	1	1	Calibri	k	2	yellow	pink	blue	gray	purple	2	764 457	704 443	748 384	755 326	orange	red	pink	cyan	2	538 468	510 396	587 315	567 389	0	6	0	6	0	NaN	NaN	NaN
+1	9	1.808513e-01	3.502698e-01	7.008692e-01	2.002645e-01	2.833929e-01	2.001383e+00	0	2	Calibri	 	 	pink	purple	white	green	black	1	586 400	528 377	568 449	571 330	magenta	cyan	green	blue	1	752 441	714 378	700 474	751 338	0	0	0	8	1	NaN	NaN	NaN
+1	10	1.302232e-01	3.502718e-01	7.003829e-01	2.000475e-01	8.841628e-01	2.001986e+00	0	1	Calibri	k	4	blue	magenta	red	cyan	white	2	736 494	769 418	749 352	700 404	pink	white	yellow	cyan	2	526 456	547 407	579 515	568 331	0	6	0	8	0	NaN	NaN	NaN
+1	11	1.302797e-01	3.503321e-01	7.004270e-01	1.999020e-01	2.839833e-01	2.001532e+00	1	2	Calibri	 	 	yellow	green	orange	pink	purple	2	698 366	764 374	720 430	696 477	white	red	gray	blue	2	507 376	585 359	549 465	572 298	0	0	0	6	1	NaN	NaN	NaN
+1	12	1.138524e-01	3.502427e-01	7.006939e-01	2.001523e-01	2.835300e-01	2.001535e+00	1	3	Calibri	 	 	yellow	pink	white	green	blue	2	759 453	709 398	728 315	773 393	red	magenta	blue	white	2	514 387	583 418	511 441	553 306	0	0	0	6	1	NaN	NaN	NaN
