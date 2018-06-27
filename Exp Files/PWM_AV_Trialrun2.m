@@ -25,14 +25,18 @@ else
   but1 = 6;
   but2 = 8;
 end
-buttons = [but1 but2];
+buttons = [but1 but2 0];
 
 if isodd(int32(str2double(subjnum)))
   audiostim = 'lettername';
+  audiostimCat = 'letters';
   visualstim = 'digitname';  
+  visualstimCat = 'digits'; 
 else
-  audiostim = 'lettername';
-  visualstim = 'digitname';
+  audiostim = 'digitname';
+  audiostimCat = 'digits';
+  visualstim = 'lettername';
+  visualstimCat = 'letters';
 end
 
 if subjsave
@@ -54,7 +58,7 @@ end
 %% Screen Setup
 Screen('Preference', 'SkipSyncTests', 1);
 %HideCursor;
-drawsquare = false;
+drawsquare = true;
 daq = seDAQ();%initialize event code script
 
 screens = Screen('Screens');
@@ -146,7 +150,7 @@ for task = taskvec
   if ismember(task,practicetasks)
     numtrials2 = numpractice;
   else
-    numtrials2 = numtrials+numblanks;
+    numtrials2 = numtotal;
   end
   
   for trial = startTrial:numtrials2
@@ -197,7 +201,7 @@ for task = taskvec
     DrawFormattedText(testscreen2,curtrial.(visualstim){:},'center','center',txtcolor)
     
     if drawsquare
-      Screen('FillRect',testscreen2,white,[rect(3:4)-photocellrect(3:4) rect(3:4)]);
+      Screen('FillRect',testscreen2,white,syncRect);
     end
     
     %draw screen 3
@@ -251,14 +255,13 @@ for task = taskvec
       Screen('DrawTexture', expwin, testscreen2);
       
       s2ontime = Screen('Flip', expwin, fix2ontime + randi([fix2minisi fix2maxisi])/1000);
+      sound(soundclips.(audiostimCat).audio{strcmp(curtrial.(audiostim){:},eval(audiostimCat))},soundclips.(audiostimCat).SR{strcmp(curtrial.(audiostim){:},eval(audiostimCat))});
       daq.sendEventCode(task*10 + 2 + strcmp(curtrial.lettername,' ')*6); %*2,*5,*8
-      Speak(curtrial.(audiostim){:},voice,300);
-      Screen('DrawTexture', expwin, fixcross);
+            Screen('DrawTexture', expwin, fixcross);
       
       [curtrial.resp1,curtrial.RT1] = getResponce(buttons,useGamepad,s2ontime+ms2s(screen2dur-responseFudgeFactor),daq);
       
       fix3ontime = Screen('Flip', expwin, s2ontime + screen2dur/1000);
-      daq.sendEventCode(99);
       Screen('DrawTexture', expwin, testscreen3);
       jitter = randi([fix3minisi fix3maxisi]);
       [curtrial.resp1,curtrial.RT1] = getResponce(buttons,useGamepad,fix3ontime+ms2s(jitter-responseFudgeFactor),daq);
@@ -361,12 +364,8 @@ for task = taskvec
       sumResp=0;
       Screen('DrawTexture', expwin, fixcross);%prepre next screen
       while sumResp == 0
-        sumResp = getResponce(buttons,useGamepad,GetSecs)
+        KbWait
         [keydown, time, keyvec]= KbCheck;
-        if ~useGamepad
-          sumResp = sum(keyvec);
-        end
-        
         %check for pause
         if keyvec(pause)
           fprintf('Pause\n');
@@ -383,11 +382,12 @@ for task = taskvec
   %longbreak
   if task ~= taskvec(end)
     Screen('DrawTexture',expwin,blankscreen);
-    DrawFormattedText(expwin,sprintf('Sweet!\nYou''re done with this part!'),'center','center',txtcolor);
+    DrawFormattedText(expwin,sprintf('Sweet!\nYou''re done with this part!\n\n\nPress any button to continue.'),'center','center',txtcolor);
     Screen('Flip',expwin);
     WaitSecs(0.5)
+    sumResp=0;
     Screen('DrawTexture', expwin, fixcross);%prepre next screen
-    KbWait;
+    KbWait
     Screen('Flip',expwin);
   else
     Screen('DrawTexture',expwin,blankscreen);
