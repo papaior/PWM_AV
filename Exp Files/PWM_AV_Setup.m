@@ -1,27 +1,48 @@
 %% Add PTB
 addpath('/Users/Shared/toolboxes/ptb_3012/Psychtoolbox');
 addpath ('./utilityFunctions');
+
+%Speak('2','Samantha');
+%WaitSecs(0.1);
+%Speak('9','Samantha');
+%WaitSecs(0.1);
+%Speak('k','Samantha');
+%WaitSecs(0.1);
+%Speak('o','Samantha');
+%WaitSecs(0.1);
+%Speak(' ','Samantha');
 %% Get words
 path = '/Users/orestispapaioannou/Box Sync/MATLAB/PWM Pilot/PWM_AV/Exp Files/';
-sbjlog = '.SubjectLog.txt';
+sbjlog = [path 'SubjectLog.txt'];
 
-digits = {'2','4'};
-numdigits = length(digits);
-letters = {'k','p'};
-numletters = length(letters);
-voice = 'Samantha';
+digits = {'2','9',' '};%last element reserved for blank trial character
+numdigits = length(digits)-1;
+letters = {'k','o',' '};%last element reserved for blank trial character
+numletters = length(letters)-1;
+
+soundclips = struct();
+for ith = 1:length(digits)
+[soundclips.digits.audio{ith}, soundclips.digits.SR{ith}] = audioread(['./audio/' digits{ith} '.wav']);
+soundclips.digits.text{ith} = digits{ith};
+end
+for ith = 1:length(letters)
+[soundclips.letters.audio{ith}, soundclips.letters.SR{ith}] = audioread(['./audio/' letters{ith} '.wav']);
+soundclips.letters.text{ith} = letters{ith};
+end
 
 fonts = {'Calibri'};
 numfonts = length(fonts);
+
 
 %% Task parameter
 
 numtotal = 160;
 numblank = div(numtotal,2);
-numtasks = 6; %practice 1 & 2 (rects & circles), Auditory task 1 & 2, Visualtask 1 & 2 
+numtasks = 8; %practice 1 & 2 (rects & circles), Auditory task 1 & 2, Visualtask 1 & 2, interposed task
 practicetasks = 1:2;
 Atasks = [1 3:4];
 Vtasks = [2 5:6];
+interposedtasks = [7 8];
 breaks = [numtotal/4 2*numtotal/4 3*numtotal/4];
 numpractice = 20;
 
@@ -96,9 +117,9 @@ fix1maxisi = 200-fudgefactor;
 screen1dur = 200-fudgefactor;
 fix2minisi= 350-fudgefactor;
 fix2maxisi = 350-fudgefactor;
-screen2dur = 200-fudgefactor;
-fix3minisi= 700-fudgefactor;
-fix3maxisi = 700-fudgefactor;
+screen2dur = 400-fudgefactor;
+fix3minisi= 500-fudgefactor;
+fix3maxisi = 500-fudgefactor;
 screen3dur = 2000-fudgefactor;
 iti = 1000;
 countdowndelay = 800; %determines how fast the countdown moves (in ms)

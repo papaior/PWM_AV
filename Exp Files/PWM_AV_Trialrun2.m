@@ -25,20 +25,24 @@ else
   but1 = 6;
   but2 = 8;
 end
-buttons = [but1 but2];
+buttons = [but1 but2 0];
 
 if isodd(int32(str2double(subjnum)))
   audiostim = 'lettername';
-  visualstim = 'digitname';  
-else
-  audiostim = 'lettername';
+  audiostimCat = 'letters';
   visualstim = 'digitname';
+  visualstimCat = 'digits';
+else
+  audiostim = 'digitname';
+  audiostimCat = 'digits';
+  visualstim = 'lettername';
+  visualstimCat = 'letters';
 end
 
 if subjsave
-sbjData = fopen(sbjlog,'a+');
-fprintf(sbjData,'SubNum\tage\tgender\tgroup\thanded\n');
-fprintf(sbjData, '%s\t%s\t%s\t%s\t%s\n', subjnum, subjage, subjgender, subjgroup, domhand);
+  sbjData = fopen(sbjlog,'a+');
+  fprintf(sbjData,'SubNum\tage\tgender\tgroup\thanded\n');
+  fprintf(sbjData, '%s\t%s\t%s\t%s\t%s\n', subjnum, subjage, subjgender, subjgroup, domhand);
 end
 
 fileName=[subjnum '_PWM_AV_log.txt'];
@@ -117,7 +121,7 @@ for task = taskvec
   
   %Show instructions
   Screen('DrawTexture',expwin,blankscreen);
-  DrawFormattedText(expwin,instructions{task},'center','center',txtcolor);
+  DrawFormattedText(expwin,instructions{task,1+isodd(int32(str2double(subjnum)))},'center','center',txtcolor);
   Screen('Flip',expwin);
   RestrictKeysForKbCheck([]);
   KbWait;
@@ -146,98 +150,99 @@ for task = taskvec
   if ismember(task,practicetasks)
     numtrials2 = numpractice;
   else
-    numtrials2 = numtrials+numblanks;
+    numtrials2 = numtotal;
   end
   
   for trial = startTrial:numtrials2
     curtrial = triallist(task,trial);
-    
-    %redraw background
-    Screen('DrawTexture', testscreen1, fixcross);
-    Screen('DrawTexture', testscreen2, fixcross);
-    Screen('DrawTexture', testscreen3, fixcross);
-    
-    %draw screen 1
-    pos = curtrial.shapepos;
-    allrects = cell(1,numpos);
-    somerects = nan(4,numobjs);
-    for ipos=1:numpos
-      curpos = pos(ipos);
-      allrects{curpos} = somerects;
-      if ipos == 1
-        for jobj = 1:numobjs
-          somerects(:,jobj) = CenterRectOnPointd(basecrcl,curtrial.stimposx(curpos,jobj),curtrial.stimposy(curpos,jobj));
-        end%forjth
-        allrects{curpos} = somerects;
-        Screen('FillOval',testscreen1,[curtrial.colormat{curpos,1:numobjs}],allrects{curpos});
-      else
-        for jobj = 1:numobjs
-          somerects(:,jobj) = CenterRectOnPointd(baserect,curtrial.stimposx(curpos,jobj),curtrial.stimposy(curpos,jobj));
-        end%forjth
-        allrects{curpos} = somerects;
-        Screen('FillRect',testscreen1,[curtrial.colormat{curpos,1:numobjs}],allrects{curpos});
-      end%ifipos
-    end%fori
-    
-    if drawsquare
-      Screen('FillRect',testscreen1,white,[rect(3:4)-photocellrect(3:4) rect(3:4)])
-    end
-    
-    %draw screen 2
-    Screen('DrawTexture',testscreen2,blankscreen);
-    %redraw fixcross
-    Screen('TextFont',testscreen2,fixfont);
-    Screen('TextStyle',testscreen2,fixstyle);
-    Screen('TextSize',testscreen2,fixsize);
-    DrawFormattedText(testscreen2,'+','center','center',fixcolor);
-    %draw the words
-    Screen('TextFont',testscreen2,curtrial.font{:});
-    Screen('TextStyle',testscreen2,0);
-    Screen('TextSize',testscreen2,stimfontsize);
-    DrawFormattedText(testscreen2,curtrial.(visualstim){:},'center','center',txtcolor)
-    
-    if drawsquare
-      Screen('FillRect',testscreen2,white,[rect(3:4)-photocellrect(3:4) rect(3:4)]);
-    end
-    
-    %draw screen 3
-    %copy screen 1
-    Screen('DrawTexture',testscreen3,testscreen1);
-    %if change, change target obj, and determine correct response
-    if curtrial.change
-      %change targobj
-      targside = pos(1+recttarg); %determines which side is the target shape
-      if recttarg
-        targrect = CenterRectOnPointd(baserect,curtrial.stimposx(targside,curtrial.targobj),curtrial.stimposy(targside,curtrial.targobj));
-        Screen('FillRect',testscreen3,curtrial.colormat{targside,5},targrect);
-      else
-        targrect = CenterRectOnPointd(basecrcl,curtrial.stimposx(targside,curtrial.targobj),curtrial.stimposy(targside,curtrial.targobj));
-        Screen('FillOval',testscreen3,curtrial.colormat{targside,5},targrect);
-      end
-      %set correct response 2 to top
-      curtrial.corresp2 = but1;
+    if ~ismember(task,interposedtasks) || ~strcmp(curtrial.lettername, letters(end))
       
-    else
-      %If no change set correct response to bot
-      curtrial.corresp2 = but2;
-    end
-    
-    if ismember(task, Atasks)
-      %If an auditory task set correct response
-      curtrial.corresp1 = 0+buttons(strcmp(curtrial.(audiostim){:},letters)|strcmp(curtrial.(audiostim){:},digits));
-    elseif ismember(task, Vtasks)
-      %If a visual task task set correct response
-      curtrial.corresp1 = 0+buttons(strcmp(curtrial.(visualstim){:},letters)|strcmp(curtrial.(visualstim){:},digits));
-    else
-      curtrial.corresp1 = 0;
-    end
-    
-    if isempty(curtrial.corresp1)%sets accuracy to 0 if a blank trial
-      curtrial.corresp1 = 0;
-    end
-    
-    
-    %presentstuff
+      %redraw background
+      Screen('DrawTexture', testscreen1, fixcross);
+      Screen('DrawTexture', testscreen2, fixcross);
+      Screen('DrawTexture', testscreen3, fixcross);
+      
+      %draw screen 1
+      pos = curtrial.shapepos;
+      allrects = cell(1,numpos);
+      somerects = nan(4,numobjs);
+      for ipos=1:numpos
+        curpos = pos(ipos);
+        allrects{curpos} = somerects;
+        if ipos == 1
+          for jobj = 1:numobjs
+            somerects(:,jobj) = CenterRectOnPointd(basecrcl,curtrial.stimposx(curpos,jobj),curtrial.stimposy(curpos,jobj));
+          end%forjth
+          allrects{curpos} = somerects;
+          Screen('FillOval',testscreen1,[curtrial.colormat{curpos,1:numobjs}],allrects{curpos});
+        else
+          for jobj = 1:numobjs
+            somerects(:,jobj) = CenterRectOnPointd(baserect,curtrial.stimposx(curpos,jobj),curtrial.stimposy(curpos,jobj));
+          end%forjth
+          allrects{curpos} = somerects;
+          Screen('FillRect',testscreen1,[curtrial.colormat{curpos,1:numobjs}],allrects{curpos});
+        end%ifipos
+      end%fori
+      
+      if drawsquare
+        Screen('FillRect',testscreen1,white,[rect(3:4)-photocellrect(3:4) rect(3:4)])
+      end
+      
+      %draw screen 2
+      Screen('DrawTexture',testscreen2,blankscreen);
+      %redraw fixcross
+      Screen('TextFont',testscreen2,fixfont);
+      Screen('TextStyle',testscreen2,fixstyle);
+      Screen('TextSize',testscreen2,fixsize);
+      DrawFormattedText(testscreen2,'+','center','center',fixcolor);
+      %draw the words
+      Screen('TextFont',testscreen2,curtrial.font{:});
+      Screen('TextStyle',testscreen2,0);
+      Screen('TextSize',testscreen2,stimfontsize);
+      DrawFormattedText(testscreen2,curtrial.(visualstim){:},'center','center',txtcolor)
+      
+      if drawsquare
+        Screen('FillRect',testscreen2,white,[rect(3:4)-photocellrect(3:4) rect(3:4)]);
+      end
+      
+      %draw screen 3
+      %copy screen 1
+      Screen('DrawTexture',testscreen3,testscreen1);
+      %if change, change target obj, and determine correct response
+      if curtrial.change
+        %change targobj
+        targside = pos(1+recttarg); %determines which side is the target shape
+        if recttarg
+          targrect = CenterRectOnPointd(baserect,curtrial.stimposx(targside,curtrial.targobj),curtrial.stimposy(targside,curtrial.targobj));
+          Screen('FillRect',testscreen3,curtrial.colormat{targside,5},targrect);
+        else
+          targrect = CenterRectOnPointd(basecrcl,curtrial.stimposx(targside,curtrial.targobj),curtrial.stimposy(targside,curtrial.targobj));
+          Screen('FillOval',testscreen3,curtrial.colormat{targside,5},targrect);
+        end
+        %set correct response 2 to top
+        curtrial.corresp2 = but1;
+        
+      else
+        %If no change set correct response to bot
+        curtrial.corresp2 = but2;
+      end
+      
+      if ismember(task, Atasks)
+        %If an auditory task set correct response
+        curtrial.corresp1 = 0+buttons(strcmp(curtrial.(audiostim){:},letters)|strcmp(curtrial.(audiostim){:},digits));
+      elseif ismember(task, Vtasks)
+        %If a visual task task set correct response
+        curtrial.corresp1 = 0+buttons(strcmp(curtrial.(visualstim){:},letters)|strcmp(curtrial.(visualstim){:},digits));
+      else
+        curtrial.corresp1 = 0;
+      end
+      
+      if isempty(curtrial.corresp1)%sets accuracy to 0 if a blank trial
+        curtrial.corresp1 = 0;
+      end
+      
+      
+      %presentstuff
       %present normally if not wordtask
       Screen('DrawTexture', expwin, fixcross);
       fix1ontime = Screen('Flip', expwin);
@@ -251,18 +256,17 @@ for task = taskvec
       Screen('DrawTexture', expwin, testscreen2);
       
       s2ontime = Screen('Flip', expwin, fix2ontime + randi([fix2minisi fix2maxisi])/1000);
+      sound(soundclips.(audiostimCat).audio{strcmp(curtrial.(audiostim){:},eval(audiostimCat))},soundclips.(audiostimCat).SR{strcmp(curtrial.(audiostim){:},eval(audiostimCat))});
       daq.sendEventCode(task*10 + 2 + strcmp(curtrial.lettername,' ')*6); %*2,*5,*8
-      Speak(curtrial.(audiostim){:},voice,300);
       Screen('DrawTexture', expwin, fixcross);
       
       [curtrial.resp1,curtrial.RT1] = getResponce(buttons,useGamepad,s2ontime+ms2s(screen2dur-responseFudgeFactor),daq);
       
       fix3ontime = Screen('Flip', expwin, s2ontime + screen2dur/1000);
-      daq.sendEventCode(99);
       Screen('DrawTexture', expwin, testscreen3);
       jitter = randi([fix3minisi fix3maxisi]);
       [curtrial.resp1,curtrial.RT1] = getResponce(buttons,useGamepad,fix3ontime+ms2s(jitter-responseFudgeFactor),daq);
-
+      
       curtrial.Acc1 = curtrial.resp1 == curtrial.corresp1;
       storeAcc1(trial) = curtrial.Acc1;
       
@@ -309,35 +313,36 @@ for task = taskvec
       disp(['TaskAcc2 = ' num2str(nanmean(storeAcc2*100)) '%']);
       disp('...');
       disp('...');
-    
-    %print to data file
-    %task trial fix1dur fix2dur fix3dur s1dur s2dur s3dur change target font Astim Vstim newcolor ccol1 ccol2 ccol3 ccol4 cpos1 cpos2 cpos3 cpos4 rcol1 rcol2 rcol3 rcol4 rpos1 rpos2 rpos3 rpos4 Resp1 CorAns1 Resp2 CorAns2 Acc1 Acc2 RT1 RT2
-    fprintf(Data,'%s\t%s\t%3d\t%3d\t%3d\t%3d\t%3d\t%3d\t%c\t%c\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n', ...
-      num2str(task),num2str(trial),...
-      (s1ontime-fix1ontime),(s2ontime-fix2ontime),(s3ontime-fix3ontime),(fix2ontime-s1ontime),(fix3ontime-s2ontime),(offtime-s3ontime),... task trial fix1dur fix2dur fix3dur s1dur s2dur s3dur
-      num2str(curtrial.change),num2str(curtrial.targobj),curtrial.font{:} , curtrial.(audiostim){:}, curtrial.(visualstim){:},... change target font Astim Vstim
-      strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{1,5}','rows'))),... newcolor
-      strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{1,1}','rows'))),... ccol1
-      strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{1,2}','rows'))),... ccol2
-      strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{1,3}','rows'))),... ccol3
-      strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{1,4}','rows'))),... ccol4
-      num2str(curtrial.shapepos(1)),... circle side
-      [num2str(curtrial.stimposx(pos(1),1)) ' ' num2str(curtrial.stimposy(pos(1),1))],... cpos1
-      [num2str(curtrial.stimposx(pos(1),2)) ' ' num2str(curtrial.stimposy(pos(1),2))],... cpos2
-      [num2str(curtrial.stimposx(pos(1),3)) ' ' num2str(curtrial.stimposy(pos(1),3))],... cpos3
-      [num2str(curtrial.stimposx(pos(1),4)) ' ' num2str(curtrial.stimposy(pos(1),4))],... cpos4
-      strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{2,1}','rows'))),... rcol1
-      strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{2,2}','rows'))),... rcol2
-      strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{2,3}','rows'))),... rcol3
-      strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{2,4}','rows'))),... rcol4
-      num2str(curtrial.shapepos(1)),... rect side
-      [num2str(curtrial.stimposx(pos(2),1)) ' ' num2str(curtrial.stimposy(pos(2),1))],... rpos1
-      [num2str(curtrial.stimposx(pos(2),2)) ' ' num2str(curtrial.stimposy(pos(2),2))],... rpos2
-      [num2str(curtrial.stimposx(pos(2),3)) ' ' num2str(curtrial.stimposy(pos(2),3))],... rpos3
-      [num2str(curtrial.stimposx(pos(2),4)) ' ' num2str(curtrial.stimposy(pos(2),4))],... rpos4
-      num2str(curtrial.resp1),num2str(curtrial.corresp1),num2str(curtrial.resp2),num2str(curtrial.corresp2),... %Resp1 CorAns1 Resp2 CorAns2
-      num2str(curtrial.Acc1),num2str(curtrial.Acc2),num2str(curtrial.RT1*1000),num2str(curtrial.RT2*1000)); %Acc1 Acc2 RT1 RT2
-    
+      
+      %print to data file
+      %task trial fix1dur fix2dur fix3dur s1dur s2dur s3dur change target font Astim Vstim newcolor ccol1 ccol2 ccol3 ccol4 cpos1 cpos2 cpos3 cpos4 rcol1 rcol2 rcol3 rcol4 rpos1 rpos2 rpos3 rpos4 Resp1 CorAns1 Resp2 CorAns2 Acc1 Acc2 RT1 RT2
+      fprintf(Data,'%s\t%s\t%3d\t%3d\t%3d\t%3d\t%3d\t%3d\t%c\t%c\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n', ...
+        num2str(task),num2str(trial),...
+        (s1ontime-fix1ontime),(s2ontime-fix2ontime),(s3ontime-fix3ontime),(fix2ontime-s1ontime),(fix3ontime-s2ontime),(offtime-s3ontime),... task trial fix1dur fix2dur fix3dur s1dur s2dur s3dur
+        num2str(curtrial.change),num2str(curtrial.targobj),curtrial.font{:} , curtrial.(audiostim){:}, curtrial.(visualstim){:},... change target font Astim Vstim
+        strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{1,5}','rows'))),... newcolor
+        strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{1,1}','rows'))),... ccol1
+        strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{1,2}','rows'))),... ccol2
+        strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{1,3}','rows'))),... ccol3
+        strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{1,4}','rows'))),... ccol4
+        num2str(curtrial.shapepos(1)),... circle side
+        [num2str(curtrial.stimposx(pos(1),1)) ' ' num2str(curtrial.stimposy(pos(1),1))],... cpos1
+        [num2str(curtrial.stimposx(pos(1),2)) ' ' num2str(curtrial.stimposy(pos(1),2))],... cpos2
+        [num2str(curtrial.stimposx(pos(1),3)) ' ' num2str(curtrial.stimposy(pos(1),3))],... cpos3
+        [num2str(curtrial.stimposx(pos(1),4)) ' ' num2str(curtrial.stimposy(pos(1),4))],... cpos4
+        strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{2,1}','rows'))),... rcol1
+        strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{2,2}','rows'))),... rcol2
+        strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{2,3}','rows'))),... rcol3
+        strjoin(rgbnames.name(ismember(rgbnames.value,curtrial.colormat{2,4}','rows'))),... rcol4
+        num2str(curtrial.shapepos(1)),... rect side
+        [num2str(curtrial.stimposx(pos(2),1)) ' ' num2str(curtrial.stimposy(pos(2),1))],... rpos1
+        [num2str(curtrial.stimposx(pos(2),2)) ' ' num2str(curtrial.stimposy(pos(2),2))],... rpos2
+        [num2str(curtrial.stimposx(pos(2),3)) ' ' num2str(curtrial.stimposy(pos(2),3))],... rpos3
+        [num2str(curtrial.stimposx(pos(2),4)) ' ' num2str(curtrial.stimposy(pos(2),4))],... rpos4
+        num2str(curtrial.resp1),num2str(curtrial.corresp1),num2str(curtrial.resp2),num2str(curtrial.corresp2),... %Resp1 CorAns1 Resp2 CorAns2
+        num2str(curtrial.Acc1),num2str(curtrial.Acc2),num2str(curtrial.RT1*1000),num2str(curtrial.RT2*1000)); %Acc1 Acc2 RT1 RT2
+      
+    end
     % check for pause
     pause = KbName('p');
     resume = KbName('q');
@@ -351,8 +356,9 @@ for task = taskvec
       fprintf(Data,'Unpause\n');
     end
     
+    RestrictKeysForKbCheck([]);
     %break if it's time
-    if ismember(trial,breaks) && ~ismember(task,wordtasks) %don't break for wordtask
+    if ismember(trial,breaks)
       Screen('DrawTexture',expwin,blankscreen);
       DrawFormattedText(expwin,sprintf('Alright!\nTake a short break now.\n\n\nPress any button to continue.'),'center','center',txtcolor);
       Screen('Flip',expwin);
@@ -361,12 +367,8 @@ for task = taskvec
       sumResp=0;
       Screen('DrawTexture', expwin, fixcross);%prepre next screen
       while sumResp == 0
-        sumResp = getResponce(buttons,useGamepad,GetSecs)
+        KbWait
         [keydown, time, keyvec]= KbCheck;
-        if ~useGamepad
-          sumResp = sum(keyvec);
-        end
-        
         %check for pause
         if keyvec(pause)
           fprintf('Pause\n');
@@ -379,15 +381,16 @@ for task = taskvec
       Screen('Flip',expwin);
     end
   end
-
+  
   %longbreak
   if task ~= taskvec(end)
     Screen('DrawTexture',expwin,blankscreen);
-    DrawFormattedText(expwin,sprintf('Sweet!\nYou''re done with this part!'),'center','center',txtcolor);
+    DrawFormattedText(expwin,sprintf('Sweet!\nYou''re done with this part!\n\n\nPlease wait for the experimenter.'),'center','center',txtcolor);
     Screen('Flip',expwin);
-    WaitSecs(0.5)
+    sumResp=0;
     Screen('DrawTexture', expwin, fixcross);%prepre next screen
-    KbWait;
+    KbWait
+    WaitSecs(1)
     Screen('Flip',expwin);
   else
     Screen('DrawTexture',expwin,blankscreen);

@@ -109,22 +109,24 @@ end
 
 
 instructions = cell(numtasks,1);
-instructions{1,1} = 'Let''s try some practice rounds!\nMake sure to focus on the rectangles.';
-instructions{2,1} = 'Let''s try some practice rounds!\nMake sure to focus on the circles';
-instructions{1,2} = 'Let''s try some practice rounds!\nMake sure to focus on the rectangles.';
-instructions{2,2} = 'Let''s try some practice rounds!\nMake sure to focus on the circles';
-instructions{3,2} = 'Focus on the rectangles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you hear a ''K'', or the bottom button if you hear an ''O''\n\nIf no sound plays, respond only for change/nochange';
-instructions{4,2} = 'Focus on the circles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you hear a ''K'', or the bottom button if you hear an ''O''\n\nIf no sound plays, respond only for change/nochange';
-instructions{3,1} = 'Focus on the rectangles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you hear a ''2'', or the bottom button if you hear a ''9''\n\nIf no sound plays, respond only for change/nochange';
-instructions{4,1} = 'Focus on the circles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you hear a ''2'', or the bottom button if you hear a ''9''\n\nIf no sound plays, respond only for change/nochange';
+instructions{1} = 'Let''s try some practice rounds!\nMake sure to focus on the rectangles.';
+instructions{2} = 'Let''s try some practice rounds!\nMake sure to focus on the circles';
+instructions{3,1} = 'Focus on the rectangles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you hear a ''K'', or the bottom button if you hear an ''O''\n\nIf no sound plays, respond only for change/nochange';
+instructions{4,1} = 'Focus on the circles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you hear a ''K'', or the bottom button if you hear an ''O''\n\nIf no sound plays, respond only for change/nochange';
+instructions{3,2} = 'Focus on the rectangles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you hear a ''2'', or the bottom button if you hear a ''9''\n\nIf no sound plays, respond only for change/nochange';
+instructions{4,2} = 'Focus on the circles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you hear a ''2'', or the bottom button if you hear a ''9''\n\nIf no sound plays, respond only for change/nochange';
 instructions{5,1} = 'Focus on the rectangles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you see a ''K'', or the bottom button if you see an ''O''\n\nIf no letter appears, respond only for change/nochange';
 instructions{6,1} = 'Focus on the circles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you see a ''K'', or the bottom button if you see an ''O''\n\nIf no letter appears, respond only for change/nochange';
 instructions{5,2} = 'Focus on the rectangles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you see a ''2'', or the bottom button if you see a ''9''\n\nIf no letter appears, respond only for change/nochange';
 instructions{6,2} = 'Focus on the circles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you see a ''2'', or the bottom button if you see a ''9''\n\nIf no letter appears, respond only for change/nochange';
-instructions{7,2} = 'Press the top button if you hear a ''K'', or the bottom button if you hear an ''O''';
-instructions{7,1} = 'Press the top button if you hear a ''2'', or the bottom button if you hear a ''9''';
-instructions{8,1} = 'Press the top button if you see a ''K'', or the bottom button if you see an ''O''';
-instructions{8,2} = 'Press the top button if you see a ''2'', or the bottom button if you see a ''9''';
+instructions{3,1} = 'Focus on the rectangles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you hear a ''K'', or the bottom button if you hear an ''O''\n\nIf no sound plays, respond only for change/nochange';
+instructions{4,1} = 'Focus on the circles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you hear a ''K'', or the bottom button if you hear an ''O''\n\nIf no sound plays, respond only for change/nochange';
+instructions{3,2} = 'Focus on the rectangles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you hear a ''2'', or the bottom button if you hear a ''9''\n\nIf no sound plays, respond only for change/nochange';
+instructions{4,2} = 'Focus on the circles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you hear a ''2'', or the bottom button if you hear a ''9''\n\nIf no sound plays, respond only for change/nochange';
+instructions{5,1} = 'Focus on the rectangles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you see a ''K'', or the bottom button if you see an ''O''\n\nIf no letter appears, respond only for change/nochange';
+instructions{6,1} = 'Focus on the circles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you see a ''K'', or the bottom button if you see an ''O''\n\nIf no letter appears, respond only for change/nochange';
+instructions{5,2} = 'Focus on the rectangles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you see a ''2'', or the bottom button if you see a ''9''\n\nIf no letter appears, respond only for change/nochange';
+instructions{6,2} = 'Focus on the circles.\nPress the top button if any of them changed color, or the bottom button if none of them did\n\nPress the top button if you see a ''2'', or the bottom button if you see a ''9''\n\nIf no letter appears, respond only for change/nochange';
 
 
 save('PWM_fntpilot2.2_TrialSetup.mat')
