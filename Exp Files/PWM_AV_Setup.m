@@ -13,6 +13,7 @@ addpath ('./utilityFunctions');
 %Speak(' ','Samantha');
 %% Get words
 path = '/Users/orestispapaioannou/Box Sync/MATLAB/PWM Pilot/PWM_AV/Exp Files/';
+<<<<<<< HEAD
 sbjlog = './SubjectLog.txt';
 
 digits = {'2','9',' '};%last element reserved for blank trial character
@@ -20,6 +21,15 @@ numdigits = length(digits)-1;
 letters = {'k','o',' '};%last element reserved for blank trial character
 numletters = length(letters)-1;
 
+=======
+sbjlog = [path 'SubjectLog.txt'];
+
+digits = {'2','9',' '};%last element reserved for blank trial character
+numdigits = length(digits)-1;
+letters = {'k','o',' '};%last element reserved for blank trial character
+numletters = length(letters)-1;
+
+>>>>>>> bed097b3e58e22ded3755d8d0d8bb5b748cb03b5
 soundclips = struct();
 for ith = 1:length(digits)
 [soundclips.digits.audio{ith}, soundclips.digits.SR{ith}] = audioread(['./audio/' digits{ith} '.wav']);
@@ -38,10 +48,11 @@ numfonts = length(fonts);
 
 numtotal = 160;
 numblank = div(numtotal,2);
-numtasks = 6; %practice 1 & 2 (rects & circles), Auditory task 1 & 2, Visualtask 1 & 2 
+numtasks = 8; %practice 1 & 2 (rects & circles), Auditory task 1 & 2, Visualtask 1 & 2, interposed task
 practicetasks = 1:2;
 Atasks = [1 3:4];
 Vtasks = [2 5:6];
+interposedtasks = [7 8];
 breaks = [numtotal/4 2*numtotal/4 3*numtotal/4];
 numpractice = 20;
 

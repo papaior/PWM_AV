@@ -81,7 +81,11 @@ SubNum	age	gender	group	handed
 SubNum	age	gender	group	handed
 99	0	O	1 5 6 2 3 4	right
 SubNum	age	gender	group	handed
+<<<<<<< HEAD
 99	0	O	1 5 6 2 3 4	right
+=======
+99	0	O	1 2 5 6 2 3 4	right
+>>>>>>> bed097b3e58e22ded3755d8d0d8bb5b748cb03b5
 SubNum	age	gender	group	handed
 99	0	O	1 5 6 2 3 4	right
 SubNum	age	gender	group	handed
@@ -93,4 +97,10 @@ SubNum	age	gender	group	handed
 SubNum	age	gender	group	handed
 99	0	O	1 5 6 2 3 4	right
 SubNum	age	gender	group	handed
+<<<<<<< HEAD
 99	0	O	1 5 6 2 3 4	right
+=======
+99	0	O	7	right
+SubNum	age	gender	group	handed
+99	0	O	8	right
+>>>>>>> bed097b3e58e22ded3755d8d0d8bb5b748cb03b5
